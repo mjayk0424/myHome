@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+
+<th:block th:fragment="topbarFragment">
+    <div>
+        <a th:href="@{/mreview/uploadEx}">upload TEST </a>
+    </div>
+    <!-- Topbar -->
+    <th:block th:replace="fragments/navbar :: navbarFragment"></th:block>
+    <!-- End of Topbar -->
+</th:block>
+</html>

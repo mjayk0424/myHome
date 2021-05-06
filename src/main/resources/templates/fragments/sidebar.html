@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<th:block th:fragment="sidebarFragment">
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading">Side Bar</div>
+        <div class="list-group list-group-flush">
+            <a th:href="@{/mjay/guestbook/list}" class="list-group-item list-group-item-action bg-light">방명록</a>
+            <a th:href="@{/mjay/board/list}" class="list-group-item list-group-item-action bg-light">게시판</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">영화목록</a>
+            <a th:href="@{/mjay/Tmap/view}" class="list-group-item list-group-item-action bg-light">지도</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+        </div>
+    </div>
+    <!-- End of Sidebar -->
+</th:block>
+</html>

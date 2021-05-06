@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout/default">
+
+<th:block layout:fragment="content">
+    <!-- Begin Page Content -->
+    <div class="container-fluid">
+        <h1>main...</h1>
+<!--        <button type="button" class="gbBtn">방명록</button>-->
+    </div>
+
+    <script th:inline="javascript">
+        $('.gbBtn').click(function(){
+            location.href="/mjay/test/test";
+        });
+    </script>
+</th:block>
+</html>

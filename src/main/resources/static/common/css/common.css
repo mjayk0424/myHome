@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    width:100vw;
+    height: 20vh;
+    background-color: aqua;
+}
+.content {
+    width: 100vw;
+    height: 70vh;
+    background-color: lightgray;
+}
+.footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: green;
+}

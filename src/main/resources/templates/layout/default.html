@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lagn="ko" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<!-- 공통 헤더-->
+<th:block th:replace="fragments/head :: headFragment"></th:block>
+<body id="page-top">
+<!-- 상단바-->
+<th:block th:replace="fragments/topbar :: topbarFragment"></th:block>
+<div class="d-flex" id="wrapper">
+    <!-- 사이드바-->
+    <th:block th:replace="fragments/sidebar :: sidebarFragment"></th:block>
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <!-- 본문-->
+            <th:block layout:fragment="content"></th:block>
+        </div>
+    </div>
+</div>
+<!-- 공통 하단-->
+<th:block th:replace="fragments/footer :: footerFragment"></th:block>
+<!-- 공통 스크립트-->
+<th:block th:replace="fragments/script :: scriptFragment"></th:block>
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+</body>
+</html>
